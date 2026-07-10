@@ -10,135 +10,156 @@ body {
     line-height: 1.6;
 }
 
-/* Main header / hero section */
+/* ================= HEADER ================= */
+
 header {
-    background: linear-gradient(135deg, #0B3D91, #1f6feb) !important;
+    background: linear-gradient(135deg, #0B3D91, #1f6feb);
     color: white;
-    padding: 100px 20px;
     text-align: center;
+    padding: 120px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 header p {
-    margin-top: 15px;
+    margin-top: 18px;
     font-size: 22px;
     color: #dbeafe;
 }
 
-/* Navigation bar */
+/* ================= NAVIGATION ================= */
+
 nav {
-    background: #161b22;
-    padding: 15px;
+    background: rgba(22, 27, 34, 0.95);
+    padding: 18px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid #30363d;
+    backdrop-filter: blur(10px);
 }
 
 nav a {
-    color: white;
+    color: #e6edf3;
     text-decoration: none;
-    margin: 0 16px;
+    margin: 0 20px;
     font-weight: bold;
+    font-size: 17px;
+    transition: 0.25s;
 }
 
 nav a:hover {
     color: #58a6ff;
 }
 
-/* Main page sections */
+/* ================= SECTIONS ================= */
+
 section {
-    max-width: 900px;
-    margin: 30px auto;
+    max-width: 950px;
+    margin: 40px auto;
     background: #161b22;
-    padding: 30px;
-    border-radius: 10px;
-    box-sizing: border-box;
     border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 35px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
 }
 
 h2 {
     color: #58a6ff;
     border-bottom: 2px solid #1f6feb;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    margin-top: 0;
 }
 
-/* Buttons */
+section p,
+section li {
+    color: #c9d1d9;
+}
+
+/* ================= BUTTON ================= */
+
 .button {
     display: inline-block;
+    margin-top: 20px;
+    padding: 14px 26px;
     background: #1f6feb;
     color: white;
     text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    margin-top: 10px;
-    transition: 0.25s;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: .25s;
 }
 
 .button:hover {
     background: #388bfd;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
-/* Project cards */
+/* ================= PROJECT CARDS ================= */
+
 .project-card {
     background: #0d1117;
+    border-left: 5px solid #58a6ff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 25px;
     border: 1px solid #30363d;
-    border-left: 5px solid #1f6feb;
-    padding: 20px;
-    margin-top: 22px;
-    border-radius: 6px;
-    transition: 0.25s;
+    transition: .25s;
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
     border-color: #58a6ff;
 }
 
 .project-card h3 {
-    margin-top: 0;
     color: white;
+    margin-top: 0;
 }
 
-/* Links inside sections */
 section a {
     color: #58a6ff;
 }
 
+/* ================= FOOTER ================= */
+
 footer {
     text-align: center;
-    padding: 30px;
     color: #8b949e;
+    padding: 45px;
 }
 
-/* Mobile layout */
+/* ================= MOBILE ================= */
+
 @media (max-width: 600px) {
+
     header {
-        padding: 70px 20px;
+        padding: 80px 20px;
     }
 
     header h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
 
     header p {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     nav a {
         display: block;
-        margin: 8px;
+        margin: 12px 0;
     }
 
     section {
-        margin: 20px 12px;
-        padding: 20px;
+        margin: 18px;
+        padding: 25px;
     }
 }
