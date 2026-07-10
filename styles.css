@@ -12,21 +12,22 @@ body {
 
 /* Main header / hero section */
 header {
-    background: linear-gradient(135deg, #0B3D91, #1f6feb);
+    background: linear-gradient(135deg, #0B3D91, #1f6feb) !important;
     color: white;
     padding: 100px 20px;
     text-align: center;
 }
 
 header h1 {
-    margin: 0 0 12px;
+    margin: 0;
     font-size: 60px;
+    font-weight: bold;
 }
 
 header p {
-    margin: 0;
+    margin-top: 15px;
     font-size: 22px;
-    color: #d0e6ff;
+    color: #dbeafe;
 }
 
 /* Navigation bar */
