@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -7,94 +8,7 @@
 
     <title>Roberto Rivas | Aerospace Engineering Portfolio</title>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
-            margin: 0;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #0B3D91;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin-bottom: 10px;
-        }
-
-        nav {
-            background: #222;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #9ec5ff;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        h2 {
-            color: #0B3D91;
-            border-bottom: 2px solid #0B3D91;
-            padding-bottom: 8px;
-        }
-
-        .project-card {
-            background: #f8f9fa;
-            border-left: 5px solid #0B3D91;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 6px;
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: gray;
-        }
-
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                margin: 8px;
-            }
-
-            section {
-                margin: 20px 12px;
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -109,25 +23,32 @@
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#nasa">NASA</a>
-    <a href="#projects">Engineering Projects</a>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="#experience">Experience</a>
     <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
+<section>
     <h2>About Me</h2>
 
     <p>
         I am an aerospace engineering student interested in aviation,
-        space technology, embedded systems, and hands-on engineering
-        projects. My goal is to continue building the technical skills
-        needed for a career designing, testing, and improving aerospace systems.
+        spacecraft, UAV systems, and embedded electronics. I enjoy building
+        hands-on projects that help me improve my skills in engineering,
+        programming, testing, and technical documentation.
     </p>
+
+    <p>
+        My long-term goal is to work on aerospace systems involving aircraft,
+        spacecraft, research, and space exploration.
+    </p>
+
+    <a class="button" href="projects.html">View Engineering Projects</a>
 </section>
 
-<section id="nasa">
+<section id="experience">
     <h2>NASA Ames Research Center</h2>
 
     <h3>CHSLE High School & OSTEM College Intern</h3>
@@ -138,89 +59,46 @@
 
     <p>
         Completed a year-long internship at NASA Ames Research Center,
-        contributing to engineering and outreach projects while working
-        alongside NASA engineers and fellow interns.
+        contributing to engineering, software, and outreach projects while
+        working with NASA engineers and fellow interns.
     </p>
 
     <ul>
         <li>
             Developed an interactive web application for NASA's
-            <em>State of the Art SmallSat Report</em>, contributing to
-            both front-end and back-end development.
+            <em>State of the Art SmallSat Report</em>.
         </li>
 
         <li>
-            Helped visualize technical information from a 441-page
-            aerospace report to improve accessibility for researchers
-            and engineers.
+            Contributed to both front-end and back-end development.
+        </li>
+
+        <li>
+            Helped organize and visualize information from a 441-page
+            aerospace report.
         </li>
 
         <li>
             Contributed to the design and construction of a model of the
-            <strong>Advanced Composite Solar Sail System (ACS3)</strong>.
+            Advanced Composite Solar Sail System.
         </li>
 
         <li>
-            Strengthened technical communication, teamwork, and problem-solving
-            skills in a professional engineering environment.
+            Strengthened teamwork, communication, programming, and
+            problem-solving skills in a professional environment.
         </li>
     </ul>
-</section>
-
-<section id="projects">
-    <h2>Engineering Projects</h2>
-
-    <div class="project-card">
-        <h3>DIY Brushless Quadcopter</h3>
-
-        <p>
-            Assembled and flight tested a brushless quadcopter from a DIY kit
-            to gain hands-on experience with UAV systems, electronics, and
-            aircraft integration.
-        </p>
-
-        <p>
-            In calm conditions, the drone flew smoothly and maintained stable
-            control. During testing in approximately 8 mph winds with gusts of
-            10–15 mph, the aircraft drifted downwind and had difficulty holding
-            position.
-        </p>
-
-        <p>
-            <strong>Skills:</strong> UAV assembly, wiring, troubleshooting,
-            flight testing, and technical documentation
-        </p>
-
-        <p><strong>Status:</strong> Flight testing in progress</p>
-    </div>
-
-    <div class="project-card">
-        <h3>PLA Filament Environmental Monitor</h3>
-
-        <p>
-            Designed and built an Arduino-based humidity and temperature monitor
-            to evaluate room conditions for PLA filament storage.
-        </p>
-
-        <p>
-            The system uses an Arduino Uno R3, DHT11 sensor, LCD1602 display,
-            10k potentiometer, and breadboard wiring. It displays live humidity,
-            temperature, and a simple storage condition status.
-        </p>
-
-        <p>
-            <strong>Skills:</strong> Arduino programming, sensor integration,
-            LCD wiring, breadboard prototyping, and troubleshooting
-        </p>
-
-        <p><strong>Status:</strong> Functional prototype complete</p>
-    </div>
 </section>
 
 <section id="resume">
     <h2>Resume</h2>
 
-    <p>Resume coming soon.</p>
+    <p>
+        My resume includes experience at NASA Ames Research Center,
+        Chabot Space & Science Center, and hands-on engineering projects.
+    </p>
+
+    <p>Resume download coming soon.</p>
 </section>
 
 <section id="contact">
