@@ -229,7 +229,7 @@ footer {
 .project-poster {
     display: block;
     width: 100%;
-    max-width: 850px;
+    max-width: 350px;
     height: auto;
     margin: 25px auto;
     border-radius: 12px;
